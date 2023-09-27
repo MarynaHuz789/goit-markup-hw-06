@@ -18,7 +18,8 @@
 }
 
 .list-title-about-us {
-    font-style: Roboto, sans-serif;
+    font-family: "Roboto",
+        sans-serif;
     color: #2e2f42;
     font-size: 36px;
     font-weight: 700;
