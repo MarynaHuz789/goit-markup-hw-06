@@ -14,11 +14,12 @@
     justify-content: center;
 }
 
-@media screen and (min-resolution: 192dpi), 
-    screen and (min-resolution: 2dppx), 
-    screen and (min-device-pixel-ratio: 2) {
+@media screen and (min-resolution: 192dpi) and (max-width: 767px), 
+    screen and (min-resolution: 2dppx) and (max-width: 767px), 
+    screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
     .hero {
-        background-image: url('../../images/images-mobile/people-office-mobile@2x.jpg');
+        background-image: linear-gradient(rgb(46, 47, 66, 0.7), rgb(46, 47, 66, 0.7)),
+        url('../../images/images-mobile/people-office-mobile@2x.jpg');
     }
 }
 
@@ -69,6 +70,17 @@
 .hero {
     padding-top: 112px;
     padding-bottom: 112px;
+    background-image: linear-gradient(rgb(46, 47, 66, 0.7), rgb(46, 47, 66, 0.7)),
+    url(../../images/images-tablet/people-office-tablet.jpg);
+}
+
+@media screen and (min-resolution: 192dpi) and (min-width: 767px),
+screen and (min-resolution: 2dppx) and (min-width: 767px),
+screen and (min-device-pixel-ratio: 2) and (min-width: 767px) {
+    .hero {
+        background-image: linear-gradient(rgb(46, 47, 66, 0.7), rgb(46, 47, 66, 0.7)),
+            url('../../images/images-tablet/people-office-tablet@2x.jpg');
+    }
 }
 
 .hero-title {
@@ -81,16 +93,26 @@
 }
 .hero-button {
     margin-top: 36px;
-}
-    
+    }
 }
 
 @media screen and (min-width: 1158px) {
 .hero {
         padding-top: 188px;
         padding-bottom: 188px;
+        background-image: linear-gradient(rgb(46, 47, 66, 0.7), rgb(46, 47, 66, 0.7)),
+        url(../../images/images-desktop/people-office-desktop.jpg);
     }
+
 .hero-button {
     margin-top: 48px;
 }
+}
+@media screen and (min-resolution: 192dpi) and (min-width: 1158px),
+screen and (min-resolution: 2dppx) and (min-width: 1158px),
+screen and (min-device-pixel-ratio: 2) and (min-width: 1158px) {
+    .hero {
+        background-image: linear-gradient(rgb(46, 47, 66, 0.7), rgb(46, 47, 66, 0.7)),
+            url('../../images/images-desktop/people-office-desktop@2x.jpg');
+    }
 }

@@ -90,6 +90,10 @@
         overflow: hidden;
     }
 
+    .overlay {
+        display: flex;
+    }
+
 }
 
 .overlay {
@@ -115,3 +119,5 @@
 .box-wrapper:focus .overlay {
     transform: translatey(0);
 }
+
+
